@@ -20,7 +20,7 @@ PokeApp es una aplicacion que se ha realizado usando ionic, con el fin de famili
 ```sh
 git clone https://github.com/Camilo-ASC/PokeApp.git
 ```
-### 2️⃣ Clonar el Repositorio  
+### 2️⃣ Instalar repositorio  
 ```sh
 npm install
 ```
