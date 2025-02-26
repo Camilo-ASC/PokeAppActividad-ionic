@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista de Pokémon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="pokemon-container">
+    <div *ngFor="let pokemon of pokemonList" class="pokemon-card" (click)="goToDetail(pokemon)">
+      <img class="pokemon-img" 
+           [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + (pokemonList.indexOf(pokemon) + 1) + '.png'" 
+           alt="Pokemon Image">
+      <p class="pokemon-name">{{ pokemon.name }}</p>
+    </div>
+  </div>
+</ion-content>
