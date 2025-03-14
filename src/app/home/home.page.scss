@@ -1,0 +1,44 @@
+/* Estilos de la pantalla de inicio */
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  background: url('/assets/pokemon-bg.jpg') no-repeat center center/cover;
+}
+
+/* Logo de Pokémon */
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--ion-color-primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Descripción */
+.description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+ion-button {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}

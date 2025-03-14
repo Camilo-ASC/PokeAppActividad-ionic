@@ -1,0 +1,46 @@
+/* Fondo con color suave */
+ion-content {
+    --background: linear-gradient(to bottom, #ffcc00, #ffdd55);
+  }
+  
+  /* Contenedor principal */
+  .pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  /* Tarjetas de Pokémon */
+  .pokemon-card {
+    width: 140px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Imagen del Pokémon */
+  .pokemon-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Nombre del Pokémon */
+  .pokemon-name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 5px;
+  }
+  

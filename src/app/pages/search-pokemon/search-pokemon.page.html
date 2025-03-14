@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Buscar Pokémon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="search-container">
+    <ion-item class="search-bar">
+      <ion-label position="floating">Nombre o ID</ion-label>
+      <ion-input [(ngModel)]="searchQuery" type="text"></ion-input>
+    </ion-item>    
+    <ion-button expand="full" (click)="searchPokemon()">🔍 Buscar</ion-button>
+
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+    <div *ngIf="pokemon" class="pokemon-card">
+      <img class="pokemon-img" 
+           [src]="pokemon.sprites.other['official-artwork'].front_default" 
+           alt="{{ pokemon.name }}" />
+      <h2 class="pokemon-name">{{ pokemon.name | titlecase }}</h2>
+      <p><strong>ID:</strong> #{{ pokemon.id }}</p>
+      <p><strong>Altura:</strong> {{ pokemon.height / 10 }} m</p>
+      <p><strong>Peso:</strong> {{ pokemon.weight / 10 }} kg</p>
+    
+      <div class="pokemon-types">
+        <span *ngFor="let type of pokemon.types" class="pokemon-type" [ngClass]="'type-' + type.type.name">
+          {{ type.type.name | titlecase }}
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,94 @@
+/* Fondo con degradado inspirado en Pokémon */
+ion-content {
+    --background: linear-gradient(to bottom, #ffcc00, #ffdd55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+/* Contenedor principal */
+.search-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+  }
+  
+  /* Input de búsqueda */
+  ion-item {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Mensaje de error */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Estilo de la tarjeta del Pokémon encontrado */
+  .pokemon-card {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Imagen del Pokémon */
+  .pokemon-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Nombre del Pokémon */
+  .pokemon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--ion-color-primary);
+  }
+  
+  /* Tipos de Pokémon */
+  .pokemon-types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .pokemon-type {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Colores de tipos de Pokémon */
+  .type-fire { background: #F08030; }
+  .type-water { background: #6890F0; }
+  .type-grass { background: #78C850; }
+  .type-electric { background: #F8D030; }
+  .type-psychic { background: #F85888; }
+  .type-ice { background: #98D8D8; }
+  .type-dragon { background: #7038F8; }
+  .type-dark { background: #705848; }
+  .type-fairy { background: #EE99AC; }
+  
